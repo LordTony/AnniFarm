@@ -1,7 +1,6 @@
 import pyautogui
 import subprocess
 import time
-from datetime import date
 import cloudscraper
 from bs4 import BeautifulSoup
 
@@ -40,6 +39,8 @@ while(True):
 	if(any("5" in item[1] for item in servers)):
 		region = [s[0] for s in servers if "5" in s[1]][0]
 		print(f"WE IN IT TO WIN IT IN {region.upper()} BOIZ!!!")
+
+		#This might not be where it is located on your machine.
 		openMe = "C:\Program Files (x86)\Diablo II Resurrected\Diablo II Resurrected Launcher.exe"
 		subprocess.call([openMe])
 
